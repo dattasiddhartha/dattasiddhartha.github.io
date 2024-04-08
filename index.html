@@ -9,19 +9,49 @@
 <script src="./files/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="./files/main.css">
 
+<script>
+function func_undergrad_experience() {
+  var x = document.getElementById("undergrad_experience");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function func_awards() {
+  var x = document.getElementById("awards");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function func_teaching() {
+  var x = document.getElementById("teaching");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+</script>
 
 
 <div class="container">
 <div class="row">
 
-	<div class="col-md-14  left-column">
-		<div class="page-header">
+	<div class="col-md-8  left-column">
+		
+    <div style="float:left" class="page-header">
 			<h1>Siddhartha Datta</h1>
-      <img src="./files/what_it_means_to_be_schooled.jpeg" alt="me" height="330" class="img-rounded">
+      <img src="./files/out_and_about.jpeg" alt="me" height="520" class="img-rounded">
 
       <address>
         <br>
-          siddhartha <span class="grey">dot</span> datta <span class="grey">at</span> cs <span class="grey">dot</span> ox <span class="grey">dot</span> ac <span class="grey">dot</span> uk
+          siddhartha.datta <span class="grey">at</span> cs.ox.ac.uk
           <br>
           <a href="https://scholar.google.com/citations?user=mC6kzMYAAAAJ&hl">Google Scholar</a> /
           <a href="https://github.com/dattasiddhartha">Github</a> /
@@ -30,19 +60,59 @@
 
 		</div>
 
-		<p>
-		I am pursuing a PhD in Computer Science at the University of Oxford under the supervision of Prof Sir Nigel Shadbolt.
-	        My thesis is focused on the adaptation of deep neural networks against distribution shifts. Theoretically this entails studying the geometric properties of parameter spaces, and proposing parameter adaptation algorithms against different types of distribution shifts in online/meta/continual learning settings. Practically I also evaluate this in human-in-the-loop settings.
-		I interned with Peter Anderson and Alex Ku at Google on adaptive text-to-image generation. I am also a visiting PhD student at Cornell University, supervised by Prof Kilian Weinberger. 	
-		</p>
+    <div style="float:center" class="page-header">
+      <br><br><br><br>
+      <p>
+        I am a PhD in Computer Science student at the University of Oxford under the supervision of Sir Nigel Shadbolt.
+        I also completed parts of my PhD at Google (with Peter Anderson and Alex Ku) and Cornell University (with Prof Kilian Weinberger).
+        My research is an end-to-end study of distributed machine learning. 
+        I have worked on model training/finetuning/alignment dynamics, metrics/evaluation methodology, datasets, security/privacy/fairness, and human-in-the-loop deployment.
+        </p>
 
-		<br>
+		</div>
 
-		<h2>Publications</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-14  left-column">
+
+		<h2>Highlighted Publications</h2>
 
 		<ul class="media-list, citations">
 
-<li class="media">
+      <li class="media">
+        <a class="pull-left" href="https://">
+          <img class="media-object img-responsive" src="./files/pe.png" alt="" width="200">
+        </a>
+        <div class="media-body">
+                  <p>
+      <strong>Siddhartha Datta</strong>, Alexander Ku, Deepak Ramachandran, Peter Anderson, <span class="cite-title">Prompt Expansion for Adaptive Text-to-Image Generation</span>. 
+      <br>
+      <a href="https://arxiv.org/abs/2312.16720">PDF</a>
+              </p>
+            <p></p>
+        </div>
+      </li>
+      <br>
+		
+      <li class="media">
+        <a class="pull-left" href="https://">
+          <img class="media-object img-responsive" src="./files/ols.png" alt="" width="200">
+        </a>
+        <div class="media-body">
+                  <p>
+      Ruihan Wu*, <strong>Siddhartha Datta*</strong>, Yi Su, Dheeraj Baby, Yu-Xiang Wang, Kilian Q Weinberger <i>[*equal contribution]</i>, <span class="cite-title">Online Feature Updates Improve Online (Generalized) Label Shift Adaptation</span>, NeurIPS 2023 Workshop. 
+      <br>
+      <a href="https://www.arxiv.org/abs/2402.03545">PDF</a>
+              </p>
+            <p></p>
+        </div>
+      </li>
+      <br>
+		
+
+
+    <li class="media">
         <a class="pull-left" href="https://">
           <img class="media-object img-responsive" src="./files/ewc_mota.gif" alt="" width="200">
         </a>
@@ -71,7 +141,53 @@
         </div>
       </li>
       <br>
-			
+
+      <li class="media">
+        <a class="pull-left" href="https://">
+          <img class="media-object img-responsive" src="./files/snp.png" alt="" width="200">
+        </a>
+        <div class="media-body">
+                  <p>
+      <strong>Siddhartha Datta</strong>, Nigel Shadbolt, <span class="cite-title">Projected Subnetworks Scale Adaptation</span>. 
+      <br>
+      <a href="https://arxiv.org/abs/2301.11487">PDF</a>
+              </p>
+            <p></p>
+        </div>
+      </li>
+      <br>
+
+        
+      <li class="media">
+        <a class="pull-left" href="https://">
+          <img class="media-object img-responsive" src="./files/gd_v3.png" alt="" width="200">
+        </a>
+        <div class="media-body">
+                  <p>
+      Konrad Kollnig, <strong>Siddhartha Datta</strong>, Thomas Serban von Davier, Max Van Kleek, Reuben Binns, Ulrik Lyngs, Nigel Shadbolt, <span class="cite-title">‘We are adults and deserve control of our phones’: Examining the risks and opportunities of an ability to repair for mobile apps</span>, FAACT 2023. 
+      <br>
+      <a href="https://arxiv.org/abs/2211.08005">PDF</a>
+              </p>
+            <p></p>
+        </div>
+      </li>
+    <br>
+
+      <li class="media">
+        <a class="pull-left" href="https://">
+          <img class="media-object img-responsive" src="./files/gw.png" alt="" width="200">
+        </a>
+        <div class="media-body">
+                  <p>
+      <strong>Siddhartha Datta</strong>, <span class="cite-title">Cross-Reality Re-Rendering: Manipulating between Digital and Physical Realities</span>. 
+      <br>
+      <a href="https://arxiv.org/abs/2211.08005">PDF</a>
+              </p>
+            <p></p>
+        </div>
+      </li>
+    <br>
+      
       <li class="media">
         <a class="pull-left" href="https://">
           <img class="media-object img-responsive" src="./files/greasevision.png" alt="" width="200">
@@ -89,103 +205,13 @@
 			
       <li class="media">
         <a class="pull-left" href="https://">
-          <img class="media-object img-responsive" src="./files/learn2weight.png" alt="" width="200">
-        </a>
-        <div class="media-body">
-                  <p>
-      <strong>Siddhartha Datta</strong>, <span class="cite-title">Learn2Weight: Parameter Adaptation against Similar-domain Adversarial Attacks</span>, COLING 2022.  
-      <br>
-      <a href="https://arxiv.org/pdf/2205.07315.pdf">PDF</a> / <a href="https://www.youtube.com/watch?v=y7-WZiTW9PM">talk</a>
-              </p>
-            <p></p>
-        </div>
-      </li>
-      <br>
-
-      <li class="media">
-        <a class="pull-left" href="https://">
-          <img class="media-object img-responsive" src="./files/lowloss.png" alt="" width="200">
-        </a>
-        <div class="media-body">
-                  <p>
-      <strong>Siddhartha Datta</strong>, Nigel Shadbolt, <span class="cite-title">Low-Loss Subspace Compression for Clean Gains against Multi-Agent Backdoor Attacks</span>, CVPR 2022 Workshop. 
-      <br>
-      <a href="https://arxiv.org/abs/2203.03692">PDF</a>
-              </p>
-            <p></p>
-        </div>
-      </li>
-      <br>
-
-      <li class="media">
-        <a class="pull-left" href="https://">
-          <img class="media-object img-responsive" src="./files/multiagentbackdoor.png" alt="" width="200">
-        </a>
-        <div class="media-body">
-                  <p>
-      <strong>Siddhartha Datta</strong>, Nigel Shadbolt, <span class="cite-title">Backdoors Stuck At The Frontdoor: Multi-Agent Backdoor Attacks That Backfire</span>, ICLR 2022 Workshop. 
-      <br>
-      <a href="https://arxiv.org/abs/2201.12211">PDF</a>
-              </p>
-            <p></p>
-        </div>
-      </li>
-      <br>
-			
-      <li class="media">
-        <a class="pull-left" href="https://">
-          <img class="media-object img-responsive" src="./files/greaseterminator.png" alt="" width="200">
+          <img class="media-object img-responsive" src="./files/gt_text_mod.gif" alt="" width="200">
         </a>
         <div class="media-body">
                   <p>
       <strong>Siddhartha Datta</strong>, Konrad Kollnig, Nigel Shadbolt, <span class="cite-title">Mind-proofing Your Phone: Navigating the Digital Minefield with GreaseTerminator</span>, ACM IUI 2022. 
       <br>
       <a href="https://arxiv.org/abs/2112.10699">PDF</a> / <a href="https://youtu.be/31vT1V3Hv3E">video</a>  / <a href="https://youtu.be/WH_om5kHqQA">talk</a>
-              </p>
-            <p></p>
-        </div>
-      </li>
-    <br>
-
-      <li class="media">
-        <a class="pull-left" href="https://">
-          <img class="media-object img-responsive" src="./files/gan_backdoor.png" alt="" width="200">
-        </a>
-        <div class="media-body">
-                  <p>
-      <strong>Siddhartha Datta</strong>, Nigel Shadbolt, <span class="cite-title">Hiding Behind Backdoors: Self-Obfuscation Against Generative Models</span>, Technical Report. 
-      <br>
-      <a href="https://arxiv.org/abs/2201.09774">PDF</a>
-              </p>
-            <p></p>
-        </div>
-      </li>
-      <br>
-
-      <li class="media">
-        <a class="pull-left" href="https://">
-          <img class="media-object img-responsive" src="./files/widen.png" alt="" width="200">
-        </a>
-        <div class="media-body">
-                  <p>
-      <strong>Siddhartha Datta</strong>, Giulio Lovisotto, Ivan Martinovic, Nigel Shadbolt, <span class="cite-title">Widen the Backdoor To Let More Attackers In</span>, Technical Report. 
-      <br>
-      <a href="https://arxiv.org/abs/2110.04571">PDF</a>
-              </p>
-            <p></p>
-        </div>
-      </li>
-      <br>
-
-     <li class="media">
-        <a class="pull-left" href="https://">
-          <img class="media-object img-responsive" src="./files/imagine_scr.png" alt="" width="200">
-        </a>
-        <div class="media-body">
-                  <p>
-     Konrad Kollnig, <strong>Siddhartha Datta</strong>, Nigel Shadbolt, <span class="cite-title">Imagining, Studying and Realising A Less Harmful App Ecosystem</span>, OII Connected Life 2022. 
-      <br>
-      <a href="https://arxiv.org/pdf/2205.00774.pdf">PDF</a>
               </p>
             <p></p>
         </div>
@@ -207,6 +233,97 @@
       </li>
     <br>
 
+    <li class="media">
+      <a class="pull-left" href="https://">
+        <img class="media-object img-responsive" src="./files/learn2weight.png" alt="" width="200">
+      </a>
+      <div class="media-body">
+                <p>
+    <strong>Siddhartha Datta</strong>, <span class="cite-title">Learn2Weight: Parameter Adaptation against Similar-domain Adversarial Attacks</span>, COLING 2022.  
+    <br>
+    <a href="https://arxiv.org/pdf/2205.07315.pdf">PDF</a> / <a href="https://www.youtube.com/watch?v=y7-WZiTW9PM">talk</a>
+            </p>
+          <p></p>
+      </div>
+    </li>
+    <br>
+
+    <li class="media">
+      <a class="pull-left" href="https://">
+        <img class="media-object img-responsive" src="./files/lowloss.png" alt="" width="200">
+      </a>
+      <div class="media-body">
+                <p>
+    <strong>Siddhartha Datta</strong>, Nigel Shadbolt, <span class="cite-title">Low-Loss Subspace Compression for Clean Gains against Multi-Agent Backdoor Attacks</span>, CVPR 2022 Workshop. 
+    <br>
+    <a href="https://arxiv.org/abs/2203.03692">PDF</a>
+            </p>
+          <p></p>
+      </div>
+    </li>
+    <br>
+
+    <li class="media">
+      <a class="pull-left" href="https://">
+        <img class="media-object img-responsive" src="./files/multiagentbackdoor.png" alt="" width="200">
+      </a>
+      <div class="media-body">
+                <p>
+    <strong>Siddhartha Datta</strong>, Nigel Shadbolt, <span class="cite-title">Backdoors Stuck At The Frontdoor: Multi-Agent Backdoor Attacks That Backfire</span>, ICLR 2022 Workshop. 
+    <br>
+    <a href="https://arxiv.org/abs/2201.12211">PDF</a>
+            </p>
+          <p></p>
+      </div>
+    </li>
+    <br>
+    
+
+    <!-- <li class="media">
+      <a class="pull-left" href="https://">
+        <img class="media-object img-responsive" src="./files/gan_backdoor.png" alt="" width="200">
+      </a>
+      <div class="media-body">
+                <p>
+    <strong>Siddhartha Datta</strong>, Nigel Shadbolt, <span class="cite-title">Hiding Behind Backdoors: Self-Obfuscation Against Generative Models</span>, Technical Report. 
+    <br>
+    <a href="https://arxiv.org/abs/2201.09774">PDF</a>
+            </p>
+          <p></p>
+      </div>
+    </li>
+    <br>
+
+    <li class="media">
+      <a class="pull-left" href="https://">
+        <img class="media-object img-responsive" src="./files/widen.png" alt="" width="200">
+      </a>
+      <div class="media-body">
+                <p>
+    <strong>Siddhartha Datta</strong>, Giulio Lovisotto, Ivan Martinovic, Nigel Shadbolt, <span class="cite-title">Widen the Backdoor To Let More Attackers In</span>, Technical Report. 
+    <br>
+    <a href="https://arxiv.org/abs/2110.04571">PDF</a>
+            </p>
+          <p></p>
+      </div>
+    </li>
+    <br>
+
+   <li class="media">
+      <a class="pull-left" href="https://">
+        <img class="media-object img-responsive" src="./files/imagine_scr.png" alt="" width="200">
+      </a>
+      <div class="media-body">
+                <p>
+   Konrad Kollnig, <strong>Siddhartha Datta</strong>, Nigel Shadbolt, <span class="cite-title">Imagining, Studying and Realising A Less Harmful App Ecosystem</span>, OII Connected Life 2022. 
+    <br>
+    <a href="https://arxiv.org/pdf/2205.00774.pdf">PDF</a>
+            </p>
+          <p></p>
+      </div>
+    </li>
+  <br>
+
   <li class="media">
     <a class="pull-left" href="https://">
       <img class="media-object img-responsive" src="./files/obfuscode.png" alt="" width="200">
@@ -220,10 +337,132 @@
         <p></p>
     </div>
   </li>
-<br>
+<br> -->
 
+<h2>Research Software</h2>
 
-    <h2>Highlighted Projects</h2>
+<li class="media">
+  <a class="pull-left" href="https://">
+    <img class="media-object img-responsive" src="./files/cmb.png" alt="" width="200">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading">Fast Cosmic Microwave Background Interpolator
+    <p>
+   <small>
+    Computes CMB power spectrum values at 106 times faster using meta learning.
+  </small>
+    </p></h4>
+  <p></p>
+            <p>
+  <a href="https://github.com/dattasiddhartha/fast-power-spectrum-interpolation">code</a>
+        </p>
+      <p></p>
+  </div>
+  </li>
+  <br>
+
+  <li class="media">
+    <a class="pull-left" href="https://">
+      <img class="media-object img-responsive" src="./files/neurocogpy.png" alt="" width="200">
+    </a>
+    <div class="media-body">
+      <h4 class="media-heading">neurocogpy
+      <p>
+     <small>
+      ECoG processing library for multi-electrode time series analysis & modelling.
+    </small>
+      </p></h4>
+    <p></p>
+              <p>
+    <a href="https://github.com/dattasiddhartha/neurocogpy">code</a>
+          </p>
+        <p></p>
+    </div>
+    </li>
+    <br>
+
+    <li class="media">
+      <a class="pull-left" href="https://">
+        <img class="media-object img-responsive" src="./files/polysemy.png" alt="" width="200">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">Polysemy Word Tagging Tool
+        <p>
+       <small>
+        Word tagger & annotation tool to study concept/word learning of children
+      </small>
+        </p></h4>
+      <p></p>
+                <p>
+      <a href="https://github.com/dattasiddhartha-1/polysemous-word-tagging-tool">code</a>
+            </p>
+          <p></p>
+      </div>
+      </li>
+      <br>
+
+      <li class="media">
+        <a class="pull-left" href="https://">
+          <img class="media-object img-responsive" src="./files/obfuscode.png" alt="" width="200">
+        </a>
+        <div class="media-body">
+          <h4 class="media-heading">DeepObfusCode
+          <p>
+         <small>
+          Homomorphic system executing model-obfuscated code (AISC 2021).
+        </small>
+          </p></h4>
+        <p></p>
+                  <p>
+        <a href="https://github.com/dattasiddhartha/DeepObfusCode">code</a>
+              </p>
+            <p></p>
+        </div>
+        </li>
+        <br>
+
+      <li class="media">
+        <a class="pull-left" href="https://">
+          <img class="media-object img-responsive" src="./files/greaseterminator.png" alt="" width="200">
+        </a>
+        <div class="media-body">
+          <h4 class="media-heading">GreaseTerminator
+          <p>
+         <small>
+          GreaseTerminator is an active, non-invasive intervention tool to patch dark patterns in operating systems and app ecosystems through interface re-rendering.
+        </small>
+          </p></h4>
+        <p></p>
+                  <p>
+        <a href="https://github.com/greaseuniverse/greaseterminator">code</a>
+              </p>
+            <p></p>
+        </div>
+        </li>
+        <br>
+
+        <li class="media">
+          <a class="pull-left" href="https://">
+            <img class="media-object img-responsive" src="./files/greasedroid.png" alt="" width="200">
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">GreaseDroid
+            <p>
+           <small>
+            GreaseDroid makes it easier for Android users to make their apps fit their special needs by decoding and inserting modular patches.
+          </small>
+            </p></h4>
+        <p></p>
+                    <p>
+        <a href="https://github.com/OxfordHCC/greasedroid">code</a>
+                </p>
+              <p></p>
+          </div>
+        </li>
+        <br>
+        
+
+<h2>Open-Source Applications</h2>
 
 		<ul class="media-list, citations">
 
@@ -286,46 +525,6 @@
         </div>
       </li>
     <br>
-
-  <li class="media">
-    <a class="pull-left" href="https://">
-      <img class="media-object img-responsive" src="./files/greasedroid.png" alt="" width="200">
-    </a>
-    <div class="media-body">
-      <h4 class="media-heading">GreaseDroid
-      <p>
-     <small>
-      GreaseDroid makes it easier for Android users to make their apps fit their special needs by decoding and inserting modular patches.
-    </small>
-      </p></h4>
-  <p></p>
-              <p>
-  <a href="https://github.com/OxfordHCC/greasedroid">code</a>
-          </p>
-        <p></p>
-    </div>
-  </li>
-<br>
-
-<li class="media">
-  <a class="pull-left" href="https://">
-    <img class="media-object img-responsive" src="./files/greaseterminator.png" alt="" width="200">
-  </a>
-  <div class="media-body">
-    <h4 class="media-heading">GreaseTerminator
-    <p>
-   <small>
-    GreaseTerminator is an active, non-invasive intervention tool to patch dark patterns in operating systems and app ecosystems through interface re-rendering.
-  </small>
-    </p></h4>
-<p></p>
-            <p>
-<a href="https://github.com/greaseuniverse/greaseterminator">code</a>
-        </p>
-      <p></p>
-  </div>
-</li>
-<br>
 
 <li class="media">
   <a class="pull-left" href="https://">
@@ -409,22 +608,38 @@
 
 
 
+<button onclick="func_teaching()">Teaching & Service</button>
+  <div style="display:none" id="teaching">
+    <ul>
+      <li><strong>(UG/PG) Tutor</strong>: Computer Security, Advanced Security, Artificial Intelligence, Networks, Software Engineering, Design Patterns</li>
+      <li><strong>Professional service</strong>: Reviewer (EMNLP, ICML, ICLR, NeurIPS, CVPR, and other workshops), Webmaster (FAACT 2024)</li>
+      <li><strong>Volunteering</strong>: undergraduate outreach, racial equality advocacy (Hong Kong Unison)</li>
+    </ul>
+  </div>
 
+<button onclick="func_awards()">Funding & Awards</button>
+  <div style="display:none" id="awards">
+    <ul>
+      <li>Rhodes Scholarship (Oxford)</li>
+      <li>Brettschneider Scholarship (Cornell)</li>
+      <li>Joseph Lau Luen Hung Charitable Trust Scholarship (HKUST, 4 years full-tuition)</li>
+      <li>Tin Ka Ping Scholarship for Innovation & Creativity (UC Berkeley)</li>
+      <li>Li Ka Shing Foundation Scholarship for Innovation and Creativity (UC Berkeley)</li>
+      <li>Cyberport Microfund Award (Stanford)</li>
+      <li>Hong Kong Unison Scholarship</li>
+      <li>Harmony Scholarship (Home Affairs Bureau, HKSAR Government)</li>
+      <li>HKSAR Government Scholarship Fund – Reaching Out Award</li>
+    </ul>
+  </div>
 
-
-
-
-    
-    
-
-<!-- <h2>Experiences</h2>
-<strong>Institutional Contributions</strong>, University of Oxford, Cornell University, UC Berkeley, Stanford University, HKUST, Google, Goldman Sachs, Credit Suisse, Société Generale, <a href="https://www.linkedin.com/in/siddhartha-datta/">[complete list]</a>, 2017-<br>
-<!-- <strong>Reviewer</strong>, ICML22, NeurIPS22, NAACL22<br> -->
-<strong>(UG/PG) Tutor</strong>: Computer Security, Advanced Security, Artificial Intelligence, Networks, Software Engineering, Design Patterns, 2020-<br>
-<strong>Competitive Programming</strong>: 10+ Hackathon Winner (incl. CalHacks, AngelHacks, ETHGlobal), 2017-2020<br>
-
-
-
+<button onclick="func_undergrad_experience()">Undergraduate Experiences</button>
+  <div style="display:none" id="undergrad_experience">
+    <ul>
+      <li><strong>Education</strong>: HKUST (Information Systems, Global Business) + Academic Exchanges (UC Berkeley, Stanford University), 2016-2020</li>
+      <li><strong>Financial trader training</strong>: Goldman Sachs, Credit Suisse, Société Generale</li>
+      <li><strong>Competitive Programming</strong>: 10+ Hackathon Winner (incl. CalHacks, AngelHacks, ETHGlobal), 2017-2020</li>
+    </ul>
+  </div>
 
 	</div> <!-- middle column -->
 
